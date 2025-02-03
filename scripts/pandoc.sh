@@ -40,5 +40,5 @@ fi
 md_filename=$(basename "$md_file")
 md_name="${md_filename%.*}"
 
-pandoc -N --citeproc --template=$layout -o "$build_dir/$md_name.pdf" $md_file
+pandoc --pdf-engine=xelatex -N --citeproc --template=$layout -o "$build_dir/$md_name.pdf" $md_file
 
