@@ -47,5 +47,6 @@ if [[ "$debug_mode" -eq 1 ]]; then
     echo "Using layout: $layout"
 fi
 
-pandoc --pdf-engine=xelatex -N --citeproc --template=$layout -o "$build_dir/$md_name.pdf" $md_file
+# Strips comments in the form of '!-- comment' before processing:
+sed '/\s*\$--/d' $md_file | pandoc --pdf-engine=xelatex -N --citeproc --template=$layout -o "$build_dir/$md_name.pdf"
 
