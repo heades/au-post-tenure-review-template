@@ -1,5 +1,5 @@
 ---
-title: 'Statement Scholarship' 
+title: 'Statement of Scholarship' 
 
 instructions: 'Statement of Scholarship (maximum one single-spaced page Calibri
 12 point): This narrative will highlight the significance of the candidate’s
